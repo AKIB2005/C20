@@ -1,0 +1,32 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0d0d1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #e0e0ff;
+  overflow: hidden;
+}
+
+/* Canvas wrapper – p5 injects the <canvas> here */
+#canvas-container canvas {
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(120, 80, 255, 0.35),
+              0 0 80px rgba(60, 20, 180, 0.2);
+}
+
+/* HUD bar below the canvas */
+#instructions {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  color: rgba(200, 190, 255, 0.65);
+  text-align: center;
+}
+#instructions strong { color: rgba(200, 190, 255, 0.95); }

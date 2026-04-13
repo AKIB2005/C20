@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (if ever added)
+node_modules/
+package-lock.json
+
+# Old vendor files (now loaded via CDN — safe to delete these locally too)
+p5.js
+p5.dom.min.js
+p5.sound.min.js
+p5.play.js
+matter.js
